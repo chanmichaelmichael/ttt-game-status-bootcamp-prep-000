@@ -45,7 +45,7 @@ def draw?(board)
 end
 
 def over?(board)
-  return (draw?(board) || won?(board))
+  return (draw?(board) || won?(board).class == Array)
 end
 
 def winner(board)
