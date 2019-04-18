@@ -21,10 +21,10 @@ def won?(board)
   end
   
   WIN_COMBINATIONS.each do |combo|
-    if (x_pos.include?(combo[0]) || x_pos.include?(combo[1]) || x_pos.include?(combo[2]))
+    if (x_pos.include?(combo[0]) && x_pos.include?(combo[1]) && x_pos.include?(combo[2]))
       win = TRUE
       return combo
-    elsif (o_pos.include?(combo[0]) || o_pos.include?(combo[1]) || o_pos.include?(combo[2]))
+    elsif (o_pos.include?(combo[0]) && o_pos.include?(combo[1]) && o_pos.include?(combo[2]))
       win = TRUE
       return combo
     end
